@@ -2,7 +2,6 @@ import React from "react";
 import { cn } from "@/lib/utils";
 import { motion } from "framer-motion";
 import { IconBook, IconVideo } from "@tabler/icons-react";
-import Link from "next/link";
 import { Header1 } from "@/components/ui/header";
 
 export function EducationResource() {
@@ -128,15 +127,17 @@ const SkeletonTwo = () => (
 );
 
 const SkeletonThree = () => (
-  <Link
+  <a
     href="https://www.youtube.com"
     target="_blank"
+    rel="noopener noreferrer"
     className="relative flex items-center justify-center h-full"
   >
     <IconVideo className="w-12 h-12 text-red-500" />
     <p className="ml-4 text-red-500">Explore our video resources.</p>
-  </Link>
+  </a>
 );
+
 
 const SkeletonFour = () => (
   <div className="flex items-center justify-center h-full">
