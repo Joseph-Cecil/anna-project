@@ -1,7 +1,7 @@
 import { Header1 } from "@/components/ui/header";
 import { ContactHero } from "@/components/ui/hero-with-image-text-and-two-buttons";
 
-function ContactUs() {
+export default function ContactUs() {
   return (
     <div className="block">
         <Header1/>
@@ -10,4 +10,3 @@ function ContactUs() {
   );
 }
 
-export { ContactUs };

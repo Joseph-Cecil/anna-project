@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import { IconBook, IconVideo } from "@tabler/icons-react";
 import { Header1 } from "@/components/ui/header";
 
-export function EducationResource() {
+export default function EducationResource() {
   const features = [
     {
       title: "Access a Wealth of Knowledge",
@@ -147,4 +147,4 @@ const SkeletonFour = () => (
   </div>
 );
 
-export default EducationResource;
+

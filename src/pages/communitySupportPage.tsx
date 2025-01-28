@@ -60,7 +60,7 @@ const testimonials = [
   },
 ];
 
-export function CommunitySupport() {
+export default function CommunitySupport() {
   return (<>
   <Header1/>
     <div className="container py-10">

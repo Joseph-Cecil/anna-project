@@ -53,10 +53,9 @@ const demoData = {
   ],
 };
 
-function ProgramsAndServicesPage() {
+export default function ProgramsAndServicesPage() {
   return<>
-    <Header1/>
-   <Feature108 {...demoData} />;</>
+  <Header1/>
+   <Feature108 {...demoData} />;
+   </>
 }
-
-export { ProgramsAndServicesPage };
