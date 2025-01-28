@@ -1,4 +1,3 @@
-import { Header1 } from "@/components/ui/header";
 import { Testimonials } from "@/components/ui/testimonials";
 
 const testimonials = [
@@ -61,10 +60,9 @@ const testimonials = [
 ];
 
 export default function CommunitySupport() {
-  return (<>
-  <Header1/>
-    <div className="container py-10">
+  return (
+    <div className="container py-10 mt-5">
       <Testimonials testimonials={testimonials} />
-    </div></>
+    </div>
   );
 }

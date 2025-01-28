@@ -1,4 +1,4 @@
-import Layout from "../components/Layout.tsx";
+import Layout from "../src/components/Layout.tsx";
 import { lazy, Suspense } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./components/themeContext.tsx";

@@ -8,7 +8,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import { Menu, MoveRight, X } from "lucide-react";
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 
 function Header1() {
   const navigationItems = [
@@ -46,10 +46,14 @@ function Header1() {
 
   const [isOpen, setOpen] = useState(false);
   const navigate = useNavigate();
+  const location = useLocation();
 
   const handleGetStartedClick = () => {
     navigate("/education-resources");
-  }
+  };
+
+  // Disable the button if the user is on the /education-resources page
+  const isOnEducationResourcesPage = location.pathname === "/education-resources";
 
   return (
     <header className="w-full z-40 fixed top-0 left-0 bg-background">
@@ -76,12 +80,13 @@ function Header1() {
 
         {/* Buttons */}
         <div className="flex justify-end w-full gap-4">
-          <Button variant="ghost" className="hidden md:inline">
-            Book a demo
-          </Button>
           <div className="border-r hidden md:inline"></div>
-          <Button variant="outline">Sign in</Button>
-          <Button onClick={handleGetStartedClick}>Get started</Button>
+          <Button 
+            onClick={handleGetStartedClick} 
+            disabled={isOnEducationResourcesPage}
+          >
+            Get started
+          </Button>
         </div>
 
         {/* Mobile navigation */}

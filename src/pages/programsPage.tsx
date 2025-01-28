@@ -1,6 +1,5 @@
 import { BookOpen, Heart, Users } from "lucide-react";
 import { Feature108 } from "../components/shadcnblocks-com-feature108";
-import { Header1 } from "@/components/ui/header";
 
 const demoData = {
   badge: "Community Programs & Services",
@@ -55,7 +54,6 @@ const demoData = {
 
 export default function ProgramsAndServicesPage() {
   return<>
-  <Header1/>
    <Feature108 {...demoData} />;
    </>
 }
