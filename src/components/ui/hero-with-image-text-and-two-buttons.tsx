@@ -7,8 +7,8 @@ function ContactHero() {
   const [tooltip, setTooltip] = useState<{ type: "phone" | "email"; message: string } | null>(null);
 
   const contactInfo = {
-    phone: "+233 20 123 4567",
-    email: "contact@yourplatform.com",
+    phone: "+233 55 830 9059",
+    email: "info@mug.edu.gh",
   };
 
   const handleCopy = (type: "phone" | "email") => {
@@ -102,7 +102,7 @@ function ContactHero() {
                 <MapPin className="w-6 h-6 text-primary" />
                 <div>
                   <p className="text-lg font-semibold">Location</p>
-                  <p className="text-muted-foreground">Accra, Ghana</p>
+                  <p className="text-muted-foreground">Methodist University - Dansoman, Ghana</p>
                 </div>
               </div>
             </div>
