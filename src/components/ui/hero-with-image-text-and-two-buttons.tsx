@@ -7,7 +7,7 @@ function ContactHero() {
   const [tooltip, setTooltip] = useState<{ type: "phone" | "email"; message: string } | null>(null);
 
   const contactInfo = {
-    phone: "+233 55 830 9059",
+    phone: "+233 241 745 685",
     email: "info@mug.edu.gh",
   };
 

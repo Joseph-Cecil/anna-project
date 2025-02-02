@@ -71,9 +71,9 @@ function Footer() {
           <div>
             <h3 className="mb-4 text-lg font-semibold">Contact Us</h3>
             <address className="space-y-2 text-sm not-italic">
-              <p>456 Education Avenue</p>
-              <p>Knowledge City, ED 45678</p>
-              <p>Phone: (987) 654-3210</p>
+              <p>Wesley Grammar Street</p>
+              <p>Greater Accra - Dansoman</p>
+              <p>Phone: +233 241 745 685</p>
               <p>Email: support@educationresource.com</p>
             </address>
           </div>
